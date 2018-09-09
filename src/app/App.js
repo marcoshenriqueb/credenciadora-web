@@ -65,7 +65,6 @@ class App extends Component {
 
   render() {
     const {
-      token,
       loginErrors,
       loading,
       isTokenValid,
@@ -77,8 +76,7 @@ class App extends Component {
       return (
         <Box align="center" justify="center" full pad="medium">
           <Box align="center" size="medium">
-            <Title>Bem Vindo!</Title>
-            <p>{token}</p>
+            <Title>Credenciadora</Title>
             <LoginForm
               onSubmit={this.onSubmit}
               errors={loginErrors}

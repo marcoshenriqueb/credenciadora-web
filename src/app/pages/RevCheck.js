@@ -71,7 +71,7 @@ class RevCheck extends Component {
       <Box pad="medium" full>
         <Columns>
           <Box size="medium">
-            <Form compact>
+            <Form compact style={{ marginBottom: 40 }}>
               <FormField label="De:">
                 <DateTime
                   value={startDate}
@@ -117,6 +117,15 @@ class RevCheck extends Component {
                     </TableRow>
                   ))
                 }
+                <TableRow>
+                  <td>Total</td>
+                  <td>
+                    R$&nbsp;
+                    {
+                      (Object.values(summary).reduce((a, b) => a + b, 0) / 100).toFixed(2)
+                    }
+                  </td>
+                </TableRow>
               </tbody>
             </Table>
           </Box>

@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
-.grommetux-date-time__input{
+.grommetux-date-time__input, .grommetux-form-field__contents input{
   border: none;
+  outline: none;
+  padding: 5px 20px;
+  width: 100%;
 }
